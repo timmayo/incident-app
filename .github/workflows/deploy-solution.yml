@@ -16,7 +16,7 @@ jobs:
           name: packed-solution
       - uses: microsoft/powerplatform-actions/import-solution@v0
         with:
-          environment-url: ${{ vars.POWERPLATFORMENVURL }}
+          environment-url: ${{ vars.ENVIRONMENT_URL }}
           user-name: ${{ secrets.USERNAME }}
           password-secret: ${{ secrets.PASSWORD }}
           solution-file: IncidentApp_managed.zip
